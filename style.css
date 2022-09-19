@@ -1,0 +1,106 @@
+/* reset */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-weight: inherit;
+  font-size: inherit;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+button {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+/* ir */
+.ir {
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+}
+
+/* root */
+:root {
+  font-size: 62.5%;
+}
+
+/* layout */
+.wrapper {
+  width: 800px;
+  margin: 0 auto;
+}
+
+/* common */
+/* --- button --- */
+.beverage-button {
+  width: 94px;
+  padding: 11px 11px 9px 13px;
+  background-color: #fff;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
+}
+.beverage-button:hover {
+  outline: 3px solid #6327fe;
+}
+.beverage-button > img {
+  max-width: 50%;
+}
+.beverage-button-name {
+  margin: 0.7rem 0;
+}
+.beverage-button-amount {
+  display: block;
+  font-size: 1.2rem;
+  padding: 5px 16px;
+  background-color: #6327fe;
+  color: #fff;
+  border-radius: 5rem;
+}
+
+/* design */
+/* --- header area --- */
+body {
+  background-color: #eae8fe;
+}
+.header {
+  text-align: center;
+}
+.header-logo {
+  width: 40%;
+}
+
+/* --- machine area --- */
+.contents {
+  background-color: lightblue;
+}
+.contents_container {
+  display: flex;
+  gap: 28px;
+}
+.machine {
+  background-color: lightcoral;
+  flex-grow: 1;
+  padding: 31px 27px 28px;
+}
