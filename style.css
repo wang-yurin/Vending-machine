@@ -78,6 +78,29 @@ img {
   color: #fff;
   border-radius: 5rem;
 }
+/* --- sold out --- */
+/* .beverage-item {
+  position: relative;
+} */
+.soldout_cover::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  background-image: url(./images/Sold-out.png);
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  opacity: 0.9;
+  cursor: default;
+}
+.soldout_cover:hover {
+  outline: none;
+}
 
 /* design */
 /* --- header area --- */
