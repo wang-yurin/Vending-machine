@@ -8,7 +8,8 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+strong {
   margin: 0;
   font-weight: inherit;
   font-size: inherit;
@@ -26,6 +27,9 @@ button {
 img {
   vertical-align: top;
   max-width: 100%;
+}
+input {
+  border: none;
 }
 /* ir */
 .ir {
@@ -53,7 +57,6 @@ img {
 /* common */
 /* --- button --- */
 .beverage-button {
-  width: 94px;
   padding: 11px 11px 9px 13px;
   background-color: #fff;
   border-radius: 1rem;
@@ -68,6 +71,7 @@ img {
   max-width: 50%;
 }
 .beverage-button-name {
+  display: block;
   margin: 0.7rem 0;
 }
 .beverage-button-amount {
@@ -121,9 +125,120 @@ body {
 .contents_container {
   display: flex;
   gap: 28px;
+  margin-top: 68px;
 }
 .machine {
-  background-color: lightcoral;
-  flex-grow: 1;
+  background-color: #fff;
   padding: 31px 27px 28px;
+}
+
+/* --- button grid --- */
+.beverage_grid {
+  display: grid;
+  grid-template-columns: 94px 94px 94px;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 12px;
+  margin-bottom: 12px;
+}
+
+/* --- button grid bottom section */
+.form_grid {
+  display: grid;
+  grid-template-columns: 200px 94px;
+  gap: 11px 12px;
+}
+.balance {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 10px 7px;
+  background-color: #eae8fe;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.balance .balance_money::after {
+  content: "원";
+  display: inline-block;
+  margin-left: 0.1em;
+}
+.return_button,
+.insert_button {
+  padding: 9px;
+  background-color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  line-height: 1;
+}
+.insert_input {
+  padding: 0px 6px;
+  border-radius: 5px;
+  border: 1px solid #bdbdbd;
+}
+.beverage-order {
+  height: 106px;
+  padding: 12px;
+  overflow: auto;
+  background-color: #eae8fe;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+}
+.beverage-order-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+.beverage-order-item:last-child {
+  margin-bottom: 0;
+}
+.beverage-order-item span {
+  color: #333333;
+}
+.beverage-order-item span::before {
+  content: "";
+  display: inline-block;
+  width: 2em;
+  height: 3.5em;
+  margin-right: 1em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+.beverage-order-item span.original::before {
+  background-image: url(./images/Original_Cola.png);
+}
+.beverage-order-item span.green::before {
+  background-image: url(./images/Green_Cola.png);
+}
+.beverage-order-item span.violet::before {
+  background-image: url(./images/Violet_Cola.png);
+}
+.beverage-order-item span.Yellow::before {
+  background-image: url(./images/Yellow_Cola.png);
+}
+.beverage-order-item span.cool::before {
+  background-image: url(./images/Cool_Cola.png);
+}
+.beverage-order-item span.orange::before {
+  background-image: url(./images/Orange_Cola.png);
+}
+.beverage-order-item strong {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 30px;
+}
+.get_button {
+  color: #fff;
+  background-color: #6327fe;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
 }
