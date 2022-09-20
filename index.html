@@ -17,53 +17,74 @@
     </header>
     <main class="contents">
       <div class="contents_container">
-        <section class="machine">
-          <ul class="beverage">
+        <section class="machine preview_area">
+          <h2 class="ir">자판기</h2>
+          <ul class="beverage_grid">
             <li class="beverage-item">
-              <button class="beverage-button original " type="button">
+              <button class="beverage-button original" type="button">
                 <img src="./images/Original_Cola.png" alt="original cola">
-                <h3 class="beverage-button-name">Original_Cola</h3>
+                <strong class="beverage-button-name">Original_Cola</strong>
                 <span class="beverage-button-amount">1000원</span>
               </button>
             </li>
             <li class="beverage-item">
               <button class="beverage-button violet soldout_cover" type="button">
                 <img src="./images/Violet_Cola.png" alt="violet cola">
-                <h3 class="beverage-button-name">Violet_Cola</h3>
+                <strong class="beverage-button-name">Violet_Cola</strong>
                 <span class="beverage-button-amount">1000원</span>
               </button>
             </li>
             <li class="beverage-item">
               <button class="beverage-button Yellow" type="button">
                 <img src="./images/Yellow_Cola.png" alt="Yellow cola">
-                <h3 class="beverage-button-name">Yellow_Cola</h3>
+                <strong class="beverage-button-name">Yellow_Cola</strong>
                 <span class="beverage-button-amount">1000원</span>
               </button>
             </li>
             <li class="beverage-item">
               <button class="beverage-button cool" type="button">
                 <img src="./images/Cool_Cola.png" alt="cool cola">
-                <h3 class="beverage-button-name">Cool_Cola</h3>
+                <strong class="beverage-button-name">Cool_Cola</strong>
                 <span class="beverage-button-amount">1000원</span>
               </button>
             </li>
             <li class="beverage-item">
               <button class="beverage-button green" type="button">
                 <img src="./images/Green_Cola.png" alt="green cola">
-                <h3 class="beverage-button-name">Green_Cola</h3>
+                <strong class="beverage-button-name">Green_Cola</strong>
                 <span class="beverage-button-amount">1000원</span>
               </button>
             </li>
             <li class="beverage-item">
               <button class="beverage-button orange" type="button">
                 <img src="./images/Orange_Cola.png" alt="orange cola">
-                <h3 class="beverage-button-name">Oreange_Cola</h3>
+                <strong class="beverage-button-name">Oreange_Cola</strong>
                 <span class="beverage-button-amount">1000원</span>
               </button>
             </li>
           </ul>
+          <form class="form_grid">
+            <div class="balance">
+              <span>잔액 :</span>
+              <span class="balance_money">1,000</span>
+            </div>
+            <button class="return_button" type="button">거스름돈 반환</button>
+            <input class="insert_input" type="text" placeholder="입금액 입력">
+            <button class="insert_button" type="button">입금</button>
+            <ul class="beverage-order">
+              <li class="beverage-order-item">
+                <span class="original">Original_Cola</span>
+                <strong>1</strong>
+              </li>
+              <li class="beverage-order-item green">
+                <span class="green">Green_Cola</span>
+                <strong>1</strong>
+              </li>
+            </ul>
+            <button class="get_button" type="button">획득</button>
+          </form>
         </section>
-        <section class="machine">...</section>
+        <section class="machine get_area">...</section>
       </div>
     </main>
   </div>
