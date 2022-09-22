@@ -148,6 +148,7 @@ body {
 .pocket {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 6px 10px 7px;
   background-color: #eae8fe;
   font-size: 1.4rem;
@@ -176,7 +177,7 @@ body {
 .beverage-order {
   height: 106px;
   padding: 12px;
-  overflow: auto;
+  overflow-y: scroll;
   background-color: #eae8fe;
   border: 1px solid #bdbdbd;
   border-radius: 5px;
@@ -258,7 +259,7 @@ body {
   background-color: #fff;
   flex-grow: 1;
 }
-.beverage-get h2 {
+.beverage-get h3 {
   font-size: 1.4rem;
   font-weight: 700;
   text-align: center;
@@ -277,4 +278,137 @@ body {
 .total-money::after {
   content: "원";
   margin-left: 0.2em;
+}
+
+/* --- 미디어쿼리 --- */
+@media screen and (max-width: 748px) {
+  .wrapper {
+    max-width: 100%;
+  }
+  .header-logo {
+    width: 50%;
+  }
+  .contents_container {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .contents_container,
+  .next_area {
+    gap: 0;
+  }
+  .beverage_grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 30px;
+  }
+  .beverage-item {
+    width: 100%;
+  }
+  .beverage-button {
+    font-size: 1.4rem;
+    width: 100%;
+  }
+  .beverage-button-name {
+    margin: 0.6em 0;
+  }
+  .beverage-button-amount {
+    font-size: 1.5rem;
+  }
+  .form_grid {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr;
+  }
+  .beverage-order-item {
+    padding: 10px 20px;
+    font-size: 1.3rem;
+  }
+  .beverage-order-item strong {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 1.5rem;
+  }
+  .balance,
+  .pocket {
+    font-size: 1.8rem;
+  }
+  .pocket {
+    padding: 15px;
+  }
+  .return_button,
+  .insert_button,
+  .get_button {
+    font-size: 1.6em;
+  }
+  .insert_input {
+    font-size: 1.8rem;
+    padding: 0px 10px;
+  }
+  .beverage-get h3 {
+    font-size: 2rem;
+  }
+  .total {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 457px) {
+  .header-logo {
+    width: 166px;
+  }
+  .contents_container {
+    margin-top: 18px;
+  }
+  .beverage-button-name {
+    font-size: 0.9rem;
+  }
+  .beverage-button-amount {
+    font-size: 1.2rem;
+  }
+  .beverage_grid {
+    margin-bottom: 20px;
+  }
+  .balance,
+  .pocket {
+    font-size: 1.4rem;
+  }
+  .pocket {
+    padding: 6px 10px;
+  }
+  .return_button,
+  .insert_button,
+  .get_button {
+    font-size: 1.3rem;
+  }
+  .return_button,
+  .insert_button {
+    padding: 6px 9px 8px 10px;
+  }
+  .form_grid {
+    max-height: 194px;
+  }
+  .insert_input {
+    font-size: 1.3rem;
+    text-align: right;
+  }
+  .beverage-order-item {
+    padding: 12px;
+  }
+  .beverage-order-item span {
+    font-size: 0.9rem;
+  }
+  .beverage-order-item strong {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 1.4rem;
+  }
+  .beverage-get h3 {
+    font-size: 1.4rem;
+  }
+  .total {
+    font-size: 1.2rem;
+  }
+  .soldout_cover::before {
+    background-position: top 20% left 50%;
+  }
 }
