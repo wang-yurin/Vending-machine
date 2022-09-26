@@ -2,7 +2,7 @@
 
 ## 프로젝트 소개
 
-<img width="35%" src="https://user-images.githubusercontent.com/101461874/192213870-35c55542-5093-421d-b677-506a5bc9c3e4.png"/>
+<img width="50%" src="https://user-images.githubusercontent.com/101461874/192213870-35c55542-5093-421d-b677-506a5bc9c3e4.png"/>
 
 <br>
 
